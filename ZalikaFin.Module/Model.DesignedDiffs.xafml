@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="ZalikaFin">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="Banking">
+        <Items>
+          <Item Id="glap_ListView" ImageName="BO_Invoice" />
+        </Items>
+      </Item>
+      <Item Id="Journals">
+        <Items>
+          <Item Id="gljournal_ListView" ImageName="BO_Invoice" />
+        </Items>
+      </Item>
+      <Item Id="Parameters" Caption="Parameters" ImageName="BO_Folder" IsNewNode="True" />
+      <Item Id="Payments">
+        <Items>
+          <Item Id="glforequisition_ListView" ImageName="BO_Invoice" />
+          <Item Id="glpayment_ListView" ImageName="BO_Invoice" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="23.2.3.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="23.2.3.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+  </Views>
+</Application>
